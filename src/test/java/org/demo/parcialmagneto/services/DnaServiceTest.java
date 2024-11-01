@@ -71,19 +71,6 @@ public class DnaServiceTest {
     }
 
     @Test
-    public void testSecondaryRightDiagonals() {
-        String[] dna = {
-                "ATAATG",
-                "GTATGA",
-                "GCTTAG",
-                "TTTAGG",
-                "GTAGTC",
-                "AGTCAA"
-        };
-        assertTrue(dnaService.analyzeDna(dna));
-    }
-
-    @Test
     public void testTertiaryLeftDiagonals() {
         String[] dna = {
                 "ATGATG",

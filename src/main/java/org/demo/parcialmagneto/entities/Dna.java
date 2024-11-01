@@ -18,7 +18,7 @@ import java.io.Serializable;
 public class Dna extends Base implements Serializable {
 
 
-    private String dna; //ajhksdkjhasdhjkasd
+    private String dna;
 
     private boolean isMutant;
 }

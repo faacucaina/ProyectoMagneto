@@ -31,7 +31,7 @@ public class DnaService {
     private boolean isMutant(String[] dna) {
         int n = dna.length;
         int count = 0;
-
+        System.out.println("hola");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if (hasHorizontalSequence(dna, i, j, n) ||
@@ -39,7 +39,7 @@ public class DnaService {
                         hasDiagonalSequence(dna, i, j, n)) {
                     count++;
                 }
-                if (count > 1) {
+                if (count >= 2) {
                     return true;
                 }
             }
