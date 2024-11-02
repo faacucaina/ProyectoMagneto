@@ -1,13 +1,5 @@
 # Parcial Magneto
 
-## Introduccion
-Magneto quiere reclutar la mayor cantidad de mutantes para poder luchar contra los X-Mens.
-
-Te ha contratado a ti para que desarrolles un proyecto que detecte si un humano es mutante basándose en su secuencia de ADN.
-
-Para eso te ha pedido crear un programa con un método o función con la siguiente firma:
-
-**isMutant(String[] dna)**
 
 ## Funcionamiento
 
@@ -26,64 +18,6 @@ Una vez cargada correctamente la misma, se aplica una función que verifica si h
 El proyecto ha sido deployado a Render y puede ser accedido mediante el siguiente link:
 
 https://parcial-magneto.onrender.com
-
-### Endpoints
-
-- **POST** /mutant - Recibe un JSON con la matriz de ADN a verificar. Ejemplo:
-
-```json
-{
-    "dna": [
-        "ATGCGA",
-        "CAGTGC",
-        "TTATGT",
-        "AGAAGG",
-        "CCCCTA",
-        "TCACTG"
-    ]
-}
-```
-- **GET** /stats - Devuelve un JSON con la cantidad de mutantes y humanos verificados. Ejemplo:
-
-```json
-{
-    "count_mutant_dna": 40,
-    "count_human_dna": 100,
-    "ratio": 0.4
-}
-```
-
-## Ejemplos de ADN
-
-Ejemplo de matriz **MUTANTE**:
-
-```json
-{
-    "dna": [
-      "ATGCGA",
-      "CAGTGC",
-      "TTATGT",
-      "AGAAAG",
-      "CCCCTA",
-      "TCACTG"
-    ]
-}
-```
-
-Ejemplo de matriz **NO MUTANTE**:
-
-```json
-{
-    "dna": [
-      "ATGGTG",
-      "GTCTTA",
-      "AATTGG",
-      "ACTAGT",
-      "GGATTC", 
-      "AGGCAA"
-    ]
-}
-```
 
 ## Pruebas Unitarias
 
