@@ -1,7 +1,24 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '3.3.4'
+    id 'org.springframework.boot' version '3.3.5'
     id 'io.spring.dependency-management' version '1.1.6'
+    id 'jacoco'
+}
+jacoco {
+    toolVersion = "0.8.8"
+}
+
+test {
+    finalizedBy jacocoTestReport
+}
+
+jacocoTestReport {
+    dependsOn test
+    reports {
+        xml { enabled true }
+        csv { enabled false }
+        html { enabled true }
+    }
 }
 
 group = 'org.demo'
@@ -46,5 +63,6 @@ tasks.named('test') {
 bootJar {
     enabled = true
 }
+
 
 
