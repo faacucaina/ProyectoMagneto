@@ -22,3 +22,5 @@ https://parcial-magneto.onrender.com
 ## Pruebas Unitarias
 
 Se incluyen casos de pruebas contemplando todos los patrones posibles (en filas, columnas y diagonales).
+##Base de Datos
+![image](https://github.com/user-attachments/assets/2a5d1852-a7d2-4e66-b9e9-05913e957bc4)
